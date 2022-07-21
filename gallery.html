@@ -2,25 +2,24 @@
 <html>
     <head>
         <title>Arcane Art Gallery | Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="header">
-            <div class="navbar">
-                <div class="logo">
-                    <h5>Arcane Art Gallery</h5>
+        <div class="container">
+            <div class="header">
+                <div class="navbar">
+                    <img src="images/newlogo.png" class="logo">
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menu.png.png" class="menu-icon" onclick="togglemenu()">
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="about.html">About</a></li>
-                        
-                    </ul>
-                </nav>
-            </div>
-        </div>
         <section id="gallery">
 
             <h1 class="heading">Gallery</h1>
@@ -48,13 +47,21 @@
                 </div>
 
             </div>
-            
+            </section>
+            </section>
            </section>
-           <footer>
-            <p id="footer">visit Us : 11 W 53rd St, New York, NY 10019</p>
-            <p id="footer">contact us : ArcaneArtGallery@gmail.com</p>
-            <p id="footer">© Copyright 2022. All Rights Reserved. | Arcane Art Gallery</p>
-    
-        </footer>
+           </div>
+           
+        <script>
+            var menulist = document.getElementById("menuList");
+            menulist.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menulist.style.maxHeight == "0px"){
+                    menulist.style.maxHeight = "130px";
+                }else{
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+        </script>
     </body>
 </html>
